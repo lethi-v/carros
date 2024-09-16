@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.modelo, article {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo dos Carros!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Sobre Nós</h2>
+        <p>Oferecemos as melhores informações sobre carros, desde modelos até notícias do setor automotivo.</p>
+    </section>
+
+    <section id="modelos">
+        <h2>Modelos de Carros</h2>
+        <div class="modelo">
+            <h3>Carro 1</h3>
+            <p>Descrição do Carro 1.</p>
+        </div>
+        <div class="modelo">
+            <h3>Carro 2</h3>
+            <p>Descrição do Carro 2.</p>
+        </div>
+        <!-- Adicione mais modelos conforme necessário -->
+    </section>
+
+    <section id="noticias">
+        <h2>Notícias</h2>
+        <article>
+            <h3>Notícia 1</h3>
+            <p>Descrição da Notícia 1.</p>
+        </article>
+        <article>
+            <h3>Notícia 2</h3>
+            <p>Descrição da Notícia 2.</p>
+        </article>
+        <!-- Adicione mais notícias conforme necessário -->
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="mailto:exemplo@dominio.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Site de Carros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
